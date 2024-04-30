@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+//Login
+
 export const HeaderLogin = styled.header`
     background-color: black;
     display: flex;
@@ -68,7 +70,7 @@ export const Icon = styled.i`
     font-size: 2.0rem;
 `;
 
-export const Container = styled.div`
+export const ContainerLogin = styled.div`
     display: flex;
     flex-direction: column; /* Para alinhar os itens verticalmente */
     justify-content: center; /* Centralizar horizontalmente */
@@ -76,3 +78,7 @@ export const Container = styled.div`
     height: 100vh; /* 100% da altura da viewport */
     
 `;
+
+export const ContainerSignIn = styled.div`
+`;
+
