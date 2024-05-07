@@ -22,4 +22,4 @@ jobs:
       with:
         start: npm start
         wait-on: 'http://localhost:3000/login'
-        wait-on-timeout: 60 # espera até 60 segundos para o servidor iniciar
+        wait-on-timeout: 60 # espera até 1min para o servidor iniciar
