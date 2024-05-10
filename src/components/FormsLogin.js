@@ -1,41 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from '../App.styles';
-import 'primeicons/primeicons.css';
-import { useState } from "react";
 
 const FormsLogin = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-
-    const [nome, setNome] = useState('');
-    const [senha, setSenha] = useState('');
-
-    const handleChangeSenha = (event) => {
-        setSenha(event.target.value);
-    }
-
-    const handleChangeNome = (event) => {
-        setNome(event.target.value);
-    }
-
-    const handleClick = () => {
-        console.log(senha + nome);
-    }
-
-    return(
-        <S.FormsLogin>
-                    <S.IconWrapper>
-                        <i className="pi pi-envelope"></i>
-                        <input type="text" value={nome} onChange={handleChangeNome} placeholder="Digite seu e-mail"></input>
-                    </S.IconWrapper>
-                    <S.IconWrapper>
-                        <i className="pi pi-key"></i>
-                        <input type="password" value={senha} onChange={handleChangeSenha} id="senha" placeholder="Digite sua senha"></input>
-                    </S.IconWrapper>
-                    <S.ButtonWrapper>
-                        <button className="login-button" onClick={handleClick}>Entrar</button>
-                    </S.ButtonWrapper>
-                </S.FormsLogin>
-    )
-}
+    return (
+        <S.Form>
+            <label>Já sou cadastrado!</label>
+            <S.Input 
+                type="email" 
+                value={email} 
+                placeholder="Digite seu e-mail"
+                onChange={(e) => setEmail(e.target.value)}
+            />
+            <S.Input 
+                type="password" 
+                value={password}
+                placeholder="Digite sua senha"
+                onChange={(e) => setPassword(e.target.value)}
+            />
+            <S.Button>Entrar</S.Button>
+        </S.Form>
+    );
+};
 
 export default FormsLogin;

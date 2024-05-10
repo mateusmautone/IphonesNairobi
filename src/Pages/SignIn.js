@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 import * as S from '../App.styles';
-import 'primeicons/primeicons.css';
-import { useState } from "react";
-import HeaderLogin from "../components/HeaderLogin";
-import FormsLogin from "../components/FormsLogin";
+import HeaderLogin from '../components/HeaderLogin';
+import FormsLogin from '../components/FormsLogin';
+import FormsRegister from '../components/FormsRegister';
 
-
-const SigIn = () => {
-
-    
+const SignIn = () => {
     return (
-        <S.ContainerSignIn>
-            <HeaderLogin></HeaderLogin>
-        </S.ContainerSignIn>
-    )
-}
+        <S.ContainerLogin>
+            <HeaderLogin />
+            <S.FormsContainer>
+                <FormsLogin />
+                <FormsRegister />
+            </S.FormsContainer>
+        </S.ContainerLogin>
+    );
+};
 
-export default SigIn;
+export default SignIn;
