@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const FormsLogin = styled.div`
+export const FormsLoginStyle = styled.div`
     background-color: blue;
 `;

@@ -4,6 +4,7 @@ import Home from '../Pages/Home';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignIn from '../Pages/SignIn';
+import Iphones from '../Pages/Iphones';
 
 const AppRoutes = () => {
     return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
                 <Route path="/SignIn" element={<SignIn/>}></Route>
+                <Route path="/Iphones" element={<Iphones/>}></Route>
             </Routes>
         </Router>
 

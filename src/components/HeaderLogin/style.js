@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const HeaderLogin = styled.div`
+export const HeaderLoginStyle = styled.div`
     background-color: blue;
 `;

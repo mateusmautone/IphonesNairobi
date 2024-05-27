@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "../../App.styles";
-import FormsRegister from "./style";
+import FormsRegisterStyle from "./style";
 
 
 const FormsRegister = () => {

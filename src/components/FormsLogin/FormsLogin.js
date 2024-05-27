@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "../../App.styles";
-import FormsLogin from "./style";
+import FormsLoginStyle from "./style";
 
 const FormsLogin = () => {
   const [email, setEmail] = useState("");

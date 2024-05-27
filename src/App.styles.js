@@ -81,6 +81,7 @@ export const Button = styled.button`
 `;
 
 // Estilos para a página de vendas
+// Estilos para a página de vendas
 export const SalePageContainer = styled.div`
   text-align: center;
   font-family: Arial, sans-serif;
@@ -88,69 +89,69 @@ export const SalePageContainer = styled.div`
 
 export const SaleHeader = styled.header`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   background-color: black;
   color: white;
-  padding: 40px 0;
+  padding: 30px 5%;
   width: 100%;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 1000;
+  box-sizing: border-box;
 `;
 
 export const SaleNav = styled.nav`
   display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
+  justify-content: space-between;
 `;
 
 export const SaleNavItem = styled.a`
   color: white;
   text-decoration: none;
   padding: 0 20px;
-  font-size: 20px;
   cursor: pointer;
-
   &:hover {
-    text-decoration: underline;
+    color: lightgray;
   }
 `;
 
 export const SaleTitle = styled.h1`
-  font-size: 36px;
-  margin: 0 0 20px;
+  margin: 0;
+  font-size: 24px;
 `;
 
-export const MainBanner = styled.div`
+export const ContentSection = styled.div`
+  padding-top: 70px; // Space to avoid overlapping with the fixed header
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px 20px;
-  background-color: white;
-  color: black;
-  margin-top: 100px;
+  width: 100%;
+`;
+
+export const MainBanner = styled.div`
+  width: 100%;
+  padding-top: 170px; // Spacing adjusted to align with your header height
+  text-align: center;
 `;
 
 export const BannerTitle = styled.h2`
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 24px;
 `;
 
 export const BannerSubtitle = styled.p`
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
 `;
 
 export const BannerButton = styled.button`
   background-color: green;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
-
   &:hover {
     background-color: darkgreen;
   }
@@ -158,31 +159,80 @@ export const BannerButton = styled.button`
 
 export const ProductsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
   margin-top: 20px;
 `;
 
 export const Product = styled.div`
-  margin: 0 15px;
   text-align: center;
 `;
 
 export const ProductImage = styled.img`
-  width: 100px;
+  width: 160px;
   height: auto;
-  margin-bottom: 10px;
 `;
 
 export const ProductButton = styled.button`
   background-color: black;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 16px;
-
   &:hover {
     background-color: gray;
   }
+`;
+
+
+
+// Styled components
+export const PageContainer = styled.div`
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 20px;
+`;
+
+export const HeaderIphone = styled.div`
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+`;
+
+export const ProductsContainerIphone = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+`;
+
+export const ProductCard = styled.div`
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+`;
+
+export const ProductImageIphone = styled.img`
+  width: 100%;
+`;
+
+export const ProductPriceIphone = styled.div`
+  font-size: 20px;
+  color: #333;
+  margin-top: 5px;
+`;
+
+export const BuyButton = styled.button`
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
 `;
