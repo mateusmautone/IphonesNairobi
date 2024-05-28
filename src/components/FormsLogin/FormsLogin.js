@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "../../App.styles";
-import FormsLoginStyle from "./style";
+import * as B from "./style";
 
 const FormsLogin = () => {
   const [email, setEmail] = useState("");
@@ -8,7 +8,7 @@ const FormsLogin = () => {
 
   return (
     <S.Form>
-      <label>Já sou cadastrado!</label>
+      <B.p>Já sou cadastrado!</B.p>
       <S.Input
         type="email"
         value={email}

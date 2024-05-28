@@ -4,11 +4,8 @@ import styled from 'styled-components';
 export const ContainerLogin = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding-top: 60px;
-  height: 100vh;
-  background-color: #ffffff;
 `;
 
 export const HeaderLogin = styled.header`
@@ -45,7 +42,8 @@ export const FormsContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 150px;
+  flex-flow: column;
 `;
 
 export const Form = styled.div`
@@ -57,7 +55,7 @@ export const Form = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 20px 20px;
 `;
 
 export const Input = styled.input`
@@ -66,6 +64,10 @@ export const Input = styled.input`
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
+`;
+
+export const label = styled.input`
+  margin-bottom: 30px;
 `;
 
 export const Button = styled.button`

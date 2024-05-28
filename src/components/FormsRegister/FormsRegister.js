@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as S from "../../App.styles";
-import FormsRegisterStyle from "./style";
-
+import * as B from "./style";
 
 const FormsRegister = () => {
   const [fullName, setFullName] = useState("");
@@ -10,7 +9,7 @@ const FormsRegister = () => {
 
   return (
     <S.Form>
-      <label>Esta é minha primeira compra!</label>
+      <B.p>Esta é minha primeira compra!</B.p>
       <S.Input
         type="text"
         placeholder="Digite seu nome completo"

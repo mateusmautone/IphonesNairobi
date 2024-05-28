@@ -1,15 +1,15 @@
 import React from "react";
 import * as S from "../App.styles";
 import HeaderLogin from "../components/HeaderLogin/HeaderLogin";
-import FormsLogin from "../components/FormsLogin/FormsLogin";
 import FormsRegister from "../components/FormsRegister/FormsRegister";
+import Logo from '../photos/logo'
 
 const SignIn = () => {
   return (
     <S.ContainerLogin>
       <HeaderLogin />
       <S.FormsContainer>
-        <FormsLogin />
+        <Logo />
         <FormsRegister />
       </S.FormsContainer>
     </S.ContainerLogin>
