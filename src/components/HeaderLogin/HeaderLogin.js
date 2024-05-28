@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "../../App.styles";
 import "primeicons/primeicons.css";
-import HeaderLoginStyle from "./style";
+// import HeaderLoginStyle from "./style";
 
 const HeaderLogin = () => {
   return (

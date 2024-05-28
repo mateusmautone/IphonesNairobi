@@ -46,7 +46,7 @@ export const FormsContainer = styled.div`
   flex-flow: column;
 `;
 
-export const Form = styled.div`
+export const Form = styled.form`
   background-color: #FFFFFF;
   padding: 40px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);

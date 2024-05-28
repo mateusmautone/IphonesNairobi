@@ -1,8 +1,8 @@
 import * as S from "../App.styles";
 
-import iphoneBlack from '../photos/iphoneblack.jpg';
-import iphoneBlue from '../photos/iphoneblue.jpg';
-import iphonePink from '../photos/iphonepink.png'
+// import iphoneBlack from '../photos/iphoneblack.jpg';
+// import iphoneBlue from '../photos/iphoneblue.jpg';
+// import iphonePink from '../photos/iphonepink.png'
 
 const Iphones = () => {
     const products = [
