@@ -3,10 +3,17 @@ import * as S from "../../App.styles";
 import "primeicons/primeicons.css";
 // import HeaderLoginStyle from "./style";
 
+import { NavLink } from 'react-router-dom';
+
 const HeaderLogin = () => {
   return (
     <S.HeaderLogin>
       <S.Title>Iphones do Nairobi</S.Title>
+      <nav>
+        <NavLink to="/" style={{ textDecoration: 'none', color: 'white', marginRight: '15px' }}>Home</NavLink>
+        <NavLink to="/login" style={{ textDecoration: 'none', color: 'white', marginRight: '15px' }}>Login</NavLink>
+        <NavLink to="/signin" style={{ textDecoration: 'none', color: 'white' }}>Cadastro</NavLink>
+      </nav>
       <S.Subtitle>
         <i
           className="pi pi-lock"

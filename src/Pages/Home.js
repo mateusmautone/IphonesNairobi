@@ -10,9 +10,12 @@ const Home = () => {
       <S.SaleHeader>
         <S.SaleTitle>Iphones do Nairobi</S.SaleTitle>
         <S.SaleNav>
-          <S.SaleNavItem href="#">IPHONES</S.SaleNavItem>
+          <S.SaleNavItem href="/">HOME</S.SaleNavItem>
+          <S.SaleNavItem href="/iphones">IPHONES</S.SaleNavItem>
           <S.SaleNavItem href="#">APPLE WATCH</S.SaleNavItem>
           <S.SaleNavItem href="#">AIRPODS</S.SaleNavItem>
+          <S.SaleNavItem href="/login">LOGIN</S.SaleNavItem>
+          <S.SaleNavItem href="/sigin">CADASTRO</S.SaleNavItem>
         </S.SaleNav>
       </S.SaleHeader>
       <S.ContentSection>

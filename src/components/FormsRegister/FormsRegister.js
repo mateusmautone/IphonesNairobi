@@ -1,35 +1,32 @@
 import React, { useState } from "react";
 import * as S from "../../App.styles";
-import * as B from "./style";
+import * as B from "./style"; // Garanta que B.Error esteja sendo importado de './style'
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "../../firebase-config"; // Certifique-se de que este caminho está correto
+import { auth } from "../../firebase-config";
+import { useNavigate } from 'react-router-dom';
 
 const FormsRegister = () => {
-  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState(""); // Estado para armazenar mensagens de erro
+  const navigate = useNavigate();
 
   const handleRegister = async (event) => {
-    event.preventDefault(); // Impede o comportamento padrão do formulário de recarregar a página
+    event.preventDefault();
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       console.log("Conta criada com sucesso:", userCredential.user);
-      // Aqui você pode adicionar código para lidar com o sucesso do cadastro, como redirecionar o usuário
+      navigate('/'); // Redireciona para a página inicial após o sucesso
     } catch (error) {
       console.error("Erro ao criar conta:", error.message);
-      // Aqui você pode adicionar uma mensagem de erro para o usuário
+      setError("Falha ao registrar. " + (error.message || "Verifique os dados e tente novamente.")); // Configura a mensagem de erro para mostrar no frontend
     }
   };
 
   return (
     <S.Form onSubmit={handleRegister}>
       <B.p>Esta é minha primeira compra!</B.p>
-      <S.Input
-        type="text"
-        placeholder="Digite seu nome completo"
-        value={fullName}
-        onChange={(e) => setFullName(e.target.value)}
-      />
+      {error && <B.Error>Algo está errado!</B.Error>}
       <S.Input
         type="email"
         placeholder="Digite seu e-mail"
