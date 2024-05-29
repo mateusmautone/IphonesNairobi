@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const FormsLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState(""); // Estado para mensagem de erro
+  const [setErrorMessage] = useState(""); // Estado para mensagem de erro
   const navigate = useNavigate(); // Hook para navegação
 
   const handleLogin = async (e) => {

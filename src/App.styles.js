@@ -9,25 +9,28 @@ export const ContainerLogin = styled.div`
 `;
 
 export const HeaderLogin = styled.header`
-  background-color: black;
-  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
   padding: 20px 10%;
-  width: 100%;
+  width: 100vw;
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1000;
   box-sizing: border-box;
   height: 60px;
+  nav{
+    /* margin: 0 auto; */
+  }
 `;
 
 export const Title = styled.h1`
   color: white;
   font-size: 24px;
   margin: 0;
+  left: 0;
+  top: 0;
 `;
 
 export const Subtitle = styled.div`
@@ -35,6 +38,7 @@ export const Subtitle = styled.div`
   align-items: center;
   gap: 10px;
   font-size: 16px;
+  right: 0;
 `;
 
 export const FormsContainer = styled.div`
@@ -95,7 +99,7 @@ export const SaleHeader = styled.header`
   align-items: center;
   background-color: black;
   color: white;
-  padding: 30px 5%;
+  padding: 10px 5%;
   width: 100%;
   position: fixed;
   top: 0;
@@ -130,15 +134,17 @@ export const ContentSection = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
+  /* height: 100vh; */
 `;
 
 export const MainBanner = styled.div`
   width: 100%;
-  padding-top: 170px; // Spacing adjusted to align with your header height
+  padding-top: 0px; // Spacing adjusted to align with your header height
   text-align: center;
 `;
 
 export const BannerTitle = styled.h2`
+box-shadow: 7px 10px 13px 2px rgba(0, 0, 0, 0.1);
   font-size: 24px;
 `;
 
@@ -161,9 +167,11 @@ export const BannerButton = styled.button`
 
 export const ProductsContainer = styled.div`
   display: flex;
+  /* background-color: red; */
   justify-content: space-around;
   width: 100%;
   margin-top: 20px;
+  flex-direction: column;
 `;
 
 export const Product = styled.div`
