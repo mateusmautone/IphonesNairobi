@@ -59,17 +59,25 @@ export const ListaFeed = styled.div`
   max-width: 100vw;
   margin-bottom: 50px;
 `;
+<<<<<<< HEAD
 export const FotoProduto = styled.div`
   /* background-color: grey; */
+=======
+export const FotoProduto = styled.img`
+  background-color: grey;
+>>>>>>> 76042a4b4cd2a513b29a2a8f2ec75acdb5b933d2
   border-radius: 6px;
   width: 100%;
   height: 100%;
   margin: 0px;
   padding: 0px;
   object-fit: cover;
+<<<<<<< HEAD
   img{
     margin: 0 auto;
     width: 90%;
     height: auto;
   }
+=======
+>>>>>>> 76042a4b4cd2a513b29a2a8f2ec75acdb5b933d2
 `;

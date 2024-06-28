@@ -100,7 +100,10 @@ export const SaleHeader = styled.header`
   background-color: black;
   color: white;
   padding: 10px 5%;
+<<<<<<< HEAD
   height: 80px;
+=======
+>>>>>>> 76042a4b4cd2a513b29a2a8f2ec75acdb5b933d2
   width: 100%;
   position: fixed;
   top: 0;
@@ -145,7 +148,11 @@ export const MainBanner = styled.div`
 `;
 
 export const BannerTitle = styled.h2`
+<<<<<<< HEAD
 /* box-shadow: 7px 10px 13px 2px rgba(0, 0, 0, 0.1); */
+=======
+box-shadow: 7px 10px 13px 2px rgba(0, 0, 0, 0.1);
+>>>>>>> 76042a4b4cd2a513b29a2a8f2ec75acdb5b933d2
   font-size: 24px;
 `;
 
